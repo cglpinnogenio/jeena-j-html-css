@@ -10,18 +10,18 @@
 
   <body>
     <div class="flex_container" id="flex_contn">
-      <div class="sub_award">AWARDS</div>
-      <!-- <div  class="sub_three"> -->
-        <div class="sub_about">ABOUT US</div>
-        <div class="sub_contact">CONTACT</div>
-        <div class="sub_compet">OUR COMPETIONS</div>
-      <!-- </div> -->
-      <div class="sub_sign">SIGN IN /SIGN UP</div>
+        <div class="sub_award pointer"> <a href="#" target="_blank">AWARD</a> </div>
+      <div  class="sub_three pointer">
+        <div class="sub_about"><a href="#" target="_blank">ABOUT US </a></div>
+        <div class="sub_contact"><a href="#" target="_blank">CONTACT </a></div>
+        <div class="sub_compet"><a href="#" target="_blank">OUR COMPETIONS </a></div>
+      </div>
+      <div class="sub_sign pointer"><a href="#" target="_blank">SIGN IN /SIGN UP</a></div>
     </div> 
     <div class="second_flex">
       <div class="paragraph">
-        <h1>Welcome to the competition</h1>
-        <p>
+        <div class="paragraph_title">Welcome to the competition</div>
+        <div class="paragraph_body">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget ac, nec
           viverra pretium. Adipiscing sit quisque mauris est sit tristique nunc
           mauris. Urna, malesuada elementum, pellentesque luctus at dui feugiat.
@@ -30,12 +30,94 @@
           morbi eleifend enim, non. Metus, semper facilisi aliquet massa. Netus
           morbi elit quam pulvinar blandit facilisis faucibus. Nunc pellentesque
           cursus pretium eget libero
-        </p>
-        <div class="click">click to see more</div>
+        </div>
+        <div class="click pointer" >click to see more</div>
       </div>
       <div class="picture">
-        <img src="/tree image.jpg" />
+        <img class= "img_edit" src="/Assignment 2/Assets/tree new.png" alt=" tree pic"></div>
+
       </div>
+
+
+      <div class="main_box"></div>
+        <div class="sub_box"></div>
+          <form>
+            <div class="form_one"
+            <div class="title_form">fill the application</div>
+              <div class="content_form"> 
+                <div class="input_name" >
+                <input 
+                  type="text"
+                  placeholder="Full Name"/>
+              </div>
+            
+              <div class="input_email" > 
+                <input 
+                  type="email"
+                  placeholder="Enter Email Address"/>
+              </div>
+            
+              <div class="input_phone"> 
+                <input 
+                  type="number" 
+                  placeholder="Phone Number"/>
+              </div>
+            
+              <div> 
+                <input
+                 type="text"
+                 class="input_address" 
+                 placeholder="Street Address"/>
+              </div>
+              <div class="select_location">
+      
+                <select name="city" id="city" placeholder="city">
+                  <option value="City">City</option>
+                  <option value="kochi">Kochi</option>
+                  <option value="TVM">TVM</option>
+                  <option value="Kozhikode">Kozhikode</option></select>
+                  <select name="state" id="state" placeholder="State">
+                  <option value="state">State</option>
+                  <option value="kerala">Kerala</option>
+                  <option value="karnataka">Karnataka</option>
+                  <option value="Tamilnadu">Tamilnadu</option></select>
+                  </div>
+              <div class="select_country">
+                <select name="Country" id="contry" placeholder="Country">
+                  <option value="Country">Country</option>
+                  <option value="India">India</option>
+                  <option value="England">England</option>
+                  <option value="Bangladesh">Bangladesh</option></select>
+                  <input type="text" id="zipcode" placeholder="Zipcode">
+              </div>
+              <!-- <div class="select_gender">
+                <input type="radio" name="Male"  id="male" value="male" checked />
+                <input type="radio" name="Female"  id="female" value="female" /> -->
+
+
+
+              </div>
+
+  
+               
+
+            </div>
+
+
+
+
+          </form> 
+
+
+
+
+
+
+
+
+
+
+
     </div>
   </body>
 </html>
