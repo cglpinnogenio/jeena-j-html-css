@@ -9,145 +9,163 @@
   </head>
 
   <body>
-    <div class="flex_container" id="flex_contn">
-      <div class="sub_award pointer"><a href="#" target="_blank">AWARD</a></div>
-      <div class="sub_three pointer">
-        <div class="sub_about"><a href="#" target="_blank">ABOUT US </a></div>
-        <div class="sub_contact"><a href="#" target="_blank">CONTACT </a></div>
-        <div class="sub_compet">
-          <a href="#" target="_blank">OUR COMPETIONS </a>
+    <div class="parent">
+      <div class="flex_container" id="flex_contn">
+        <div class="sub_award pointer">
+          <a href="#" target="_blank">AWARD</a>
+        </div>
+        <div class="sub_three pointer">
+          <div class="sub_about"><a href="#" target="_blank">ABOUT US </a></div>
+          <div class="sub_contact">
+            <a href="#" target="_blank">CONTACT </a>
+          </div>
+          <div class="sub_compet">
+            <a href="#" target="_blank">OUR COMPETIONS </a>
+          </div>
+        </div>
+        <div class="sub_sign pointer">
+          <a href="#" target="_blank">SIGN IN /SIGN UP</a>
         </div>
       </div>
-      <div class="sub_sign pointer">
-        <a href="#" target="_blank">SIGN IN /SIGN UP</a>
-      </div>
-    </div>
-    <div class="second_flex">
-      <div class="paragraph">
-        <div class="paragraph_title">Welcome to the competition</div>
-        <div class="paragraph_body">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget ac, nec
-          viverra pretium. Adipiscing sit quisque mauris est sit tristique nunc
-          mauris. Urna, malesuada elementum, pellentesque luctus at dui feugiat.
-          Sollicitudin leo lacus sagittis purus nec phasellus dui. Libero
-          scelerisque venenatis duis ornare. Ut tellus dignissim quam auctor hac
-          morbi eleifend enim, non. Metus, semper facilisi aliquet massa. Netus
-          morbi elit quam pulvinar blandit facilisis faucibus. Nunc pellentesque
-          cursus pretium eget libero
+      <div class="second_flex">
+        <div class="paragraph">
+          <div class="paragraph_title">Welcome to the competition</div>
+          <div class="paragraph_body">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget ac,
+            nec viverra pretium. Adipiscing sit quisque mauris est sit tristique
+            nunc mauris. Urna, malesuada elementum, pellentesque luctus at dui
+            feugiat. Sollicitudin leo lacus sagittis purus nec phasellus dui.
+            Libero scelerisque venenatis duis ornare. Ut tellus dignissim quam
+            auctor hac morbi eleifend enim, non. Metus, semper facilisi aliquet
+            massa. Netus morbi elit quam pulvinar blandit facilisis faucibus.
+            Nunc pellentesque cursus pretium eget libero
+          </div>
+          <div class="click pointer">click to see more</div>
         </div>
-        <div class="click pointer">click to see more</div>
+        <div class="picture">
+          <img
+            class="img_edit"
+            src="/Assignment 2/Assets/tree new.png"
+            alt=" tree pic"
+          />
+        </div>
       </div>
-      <div class="picture">
-        <img
-          class="img_edit"
-          src="/Assignment 2/Assets/tree new.png"
-          alt=" tree pic"
-        />
-      </div>
-    </div>
 
-    <div class="main_box">
-      <div class="sub_box">
-        <div class="form_first">
-          <div class="title_form">Fill the application</div>
-          <div class="input_name">
-            <input type="text" placeholder="Full Name" />
+      <div class="main_box">
+        <div class="sub_box">
+          <div class="form_first">
+            <div class="title_form">Fill the application</div>
+            <div class="input_name">
+              <input type="text" placeholder="Full Name" />
+            </div>
+
+            <div class="input_email">
+              <input type="email" placeholder="Enter Email Address" />
+            </div>
+
+            <div class="input_phone">
+              <input type="number" placeholder="Phone Number" />
+            </div>
+
+            <div>
+              <input
+                type="text"
+                class="input_address"
+                placeholder="Street Address"
+              />
+            </div>
+            <div class="select_location">
+              <select name="city" id="city" placeholder="city">
+                <option value="City">City</option>
+                <option value="kochi">Kochi</option>
+                <option value="TVM">TVM</option>
+                <option value="Kozhikode">Kozhikode</option>
+              </select>
+              <select name="state" id="state" placeholder="State">
+                <option value="state">State</option>
+                <option value="kerala">Kerala</option>
+                <option value="karnataka">Karnataka</option>
+                <option value="Tamilnadu">Tamilnadu</option>
+              </select>
+            </div>
+            <div class="select_country">
+              <select name="Country" id="contry" placeholder="Country">
+                <option value="Country">Country</option>
+                <option value="India">India</option>
+                <option value="England">England</option>
+                <option value="Bangladesh">Bangladesh</option>
+              </select>
+              <input type="text" id="zipcode" placeholder="Zipcode" />
+            </div>
+            <div class="select_gender">
+              <input
+                type="radio"
+                name="Male"
+                id="male"
+                value="male"
+                placeholder="Male"
+                checked
+              />
+              <label for="Male" placeholder="Male">Male</label>
+              <input
+                type="radio"
+                name="Female"
+                id="female"
+                value="female"
+                placeholder="Female"
+              />
+              <label for="Female" placeholder="Female">Female</label>
+            </div>
           </div>
+          <div class="form_second">
+            <div class="descr_title">
+              <label for="Description">Description</label>
+            </div>
+            <textarea rows="3" cols="17" id="description" role="textbox">
+            </textarea>
 
-          <div class="input_email">
-            <input type="email" placeholder="Enter Email Address" />
-          </div>
-
-          <div class="input_phone">
-            <input type="number" placeholder="Phone Number" />
-          </div>
-
-          <div>
+            <div>
+              <select class="select_category">
+                <option value="Photo Contest Category">
+                  Photo Contest category
+                </option>
+                <option value="category 1">Category 1</option>
+                <option value="Category 2">Category 2</option>
+                <option value="Category 3">Category 3</option>
+              </select>
+            </div>
+            <div id="payment">Payment Options</div>
+            <div><input name="name on Card" placeholder="Name on Card*" /></div>
+            <div>
+              <input name="Credit card" id="card" placeholder="Credit Card*" />
+            </div>
+            <div><span style="color: blue">Terms and Conditions </span></div>
             <input
-              type="text"
-              class="input_address"
-              placeholder="Street Address"
-            />
-          </div>
-          <div class="select_location">
-            <select name="city" id="city" placeholder="city">
-              <option value="City">City</option>
-              <option value="kochi">Kochi</option>
-              <option value="TVM">TVM</option>
-              <option value="Kozhikode">Kozhikode</option>
-            </select>
-            <select name="state" id="state" placeholder="State">
-              <option value="state">State</option>
-              <option value="kerala">Kerala</option>
-              <option value="karnataka">Karnataka</option>
-              <option value="Tamilnadu">Tamilnadu</option>
-            </select>
-          </div>
-          <div class="select_country">
-            <select name="Country" id="contry" placeholder="Country">
-              <option value="Country">Country</option>
-              <option value="India">India</option>
-              <option value="England">England</option>
-              <option value="Bangladesh">Bangladesh</option>
-            </select>
-            <input type="text" id="zipcode" placeholder="Zipcode" />
-          </div>
-          <div class="select_gender">
-            <input
-              type="radio"
-              name="Male"
-              id="male"
-              value="male"
-              placeholder="Male"
+              type="checkbox"
+              id="agree"
+              name="I Agree"
+              value="I Agree"
               checked
             />
-            <label for="Male" placeholder="Male">Male</label>
-            <input
-              type="radio"
-              name="Female"
-              id="female"
-              value="female"
-              placeholder="Female"
-            />
-            <label for="Female" placeholder="Female">Female</label>
-          </div>
-        </div>
-        <div class="form_second">
-          <div class="descr_title">
-            <label for="Description">Description</label>
-          </div>
-          <textarea rows="3" cols="17" id="description" role="textbox">
-          </textarea>
-
-          <div>
-            <select class="select_category">
-              <option value="Photo Contest Category">
-                Photo Contest category
-              </option>
-              <option value="category 1">Category 1</option>
-              <option value="Category 2">Category 2</option>
-              <option value="Category 3">Category 3</option>
-            </select>
-          </div>
-          <div id="payment">Payment Options</div>
-          <div><input name="name on Card" placeholder="Name on Card*" /></div>
-          <div>
-            <input name="Credit card" id="card" placeholder="Credit Card*" />
-          </div>
-          <div><span style="color: blue">Terms and Conditions </span></div>
-          <input
-            type="checkbox"
-            id="agree"
-            name="I Agree"
-            value="I Agree"
-            checked
-          />
-          <label for="I Agree"
-            ><span style="color: white">I Agree </span></label
-          >
-          <div class="Two_buttons">
-            <div><input type="submit" id="submit" value="submit" /></div>
-            <div><input type="Submit" id="cancel" value="Cancel" /></div>
+            <label for="I Agree"
+              ><span style="color: white">I Agree </span></label
+            >
+            <div class="two_buttons">
+              <div>
+                <input
+                  type="submit"
+                  value="submit"
+                  placeholder="submit"
+                  id="submit"
+                />
+                <input
+                  type="submit"
+                  value="cancel"
+                  placeholder="cancel"
+                  id="cancel"
+                />
+              </div>
+            </div>
           </div>
         </div>
       </div>
