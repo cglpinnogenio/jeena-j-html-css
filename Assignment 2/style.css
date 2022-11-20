@@ -1,5 +1,6 @@
-
-*{box-sizing: border-box;}
+* {
+  box-sizing: border-box;
+}
 
 html {
   font-size: 62.5%;
@@ -9,21 +10,16 @@ body {
   color: #ffffff;
   background-color: #000000;
   margin: 0;
-  
   width: 100%;
+}
 
-}
-.parent{
-  width: 100%;
-}
 .flex_container {
   display: flex;
-  position:fixed;
+  position: fixed;
   justify-content: space-between;
   background-color: rgb(0, 0, 0);
-  
   width: 100%;
-  padding: 4rem;
+  padding: 3rem;
 }
 .pointer {
   cursor: pointer;
@@ -31,12 +27,10 @@ body {
 
 .sub_award {
   font-size: 3rem;
-
 }
 .sub_three {
   display: flex;
   gap: 3rem;
-  
 }
 
 .sub_about {
@@ -58,24 +52,20 @@ body {
 
 .second_flex {
   display: flex;
-  
   justify-content: space-between;
-  width:100%;
+  width: 100%;
   background-color: black;
   padding: 2rem;
-  
 }
 
 .paragraph {
-  width: 45%;
+  width: 50%;
   padding-top: 7rem;
-  font-size: 1.5rem;
-    
-  
+  font-size: 1.7rem;
 }
 
 .paragraph_title {
-  font-size: 2.5rem;
+  font-size: 2.8rem;
   font-family: Arial;
   padding-bottom: 1.5rem;
   margin-top: 10rem;
@@ -89,17 +79,14 @@ body {
 
 .pictue {
   margin-right: 2rem;
-  
 }
 
 .img_edit {
   margin-top: 10rem;
-  
-  
 }
 a:link,
 a:visited {
-  color: white;
+  color: #ffffff;
   text-decoration: none;
   cursor: pointer;
 }
@@ -108,35 +95,32 @@ a:visited {
   display: flex;
   width: 100%;
   padding: 4rem;
-  background-color: rgb(110, 100, 100);
+  background-color: rgba(58, 57, 57, 0.8);
   min-height: 50vh;
   margin-top: 10rem;
 }
 .sub_box {
   display: flex;
   width: 100%;
-  background-color: rgba(37, 37, 41,.5);
-  padding: 2rem;
+  background-color: rgba(46, 46, 46, 0.2);
   background-image: url(./Assets/images/camera\ downlod.jpg);
   background-repeat: no-repeat;
-  background-size:cover;
+  background-size: cover;
   background-position: center;
   align-content: center;
-  justify-content: center ;
+  justify-content: center;
   height: 60vh;
-  
-  
 }
 .form_first {
   width: 60%;
   min-height: 50vh;
   padding-left: 5rem;
-  border-right: 0.1rem solid white;
-  
+  border-right: 0.1rem solid #444141;
 }
 .title_form {
   font-size: 1.5rem;
   padding-bottom: 1rem;
+  padding-top: 2rem;
 }
 input:focus {
   outline: none;
@@ -152,7 +136,7 @@ input {
   color: rgb(114, 113, 113);
   margin-top: 2rem;
   border: none;
-  border-bottom: solid rgb(110, 107, 107); 
+  border-bottom: solid rgb(110, 107, 107);
 }
 #state {
   background-color: transparent;
@@ -178,14 +162,27 @@ input {
 #male {
   color: rgb(114, 113, 113);
 }
+
+.form_second {
+  color: rgb(114, 113, 113);
+  margin: 0;
+  padding-left: 6rem;
+  min-height: 50vh;
+  width: 50%;
+}
+
 #description {
   background-color: transparent;
-  border: solid white 0.1rem;
-  color: rgb(114, 113, 113);
+  border: solid #ffffff 0.1rem;
+  border-color: rgb(90, 89, 89);
+  padding-top: 2rem;
+  border-radius: 1rem;
 }
 .descr_title {
   color: rgb(114, 113, 113);
   padding-bottom: 1rem;
+  padding-top: 2rem;
+  font-size: 1.5rem;
 }
 .select_category {
   background-color: transparent;
@@ -199,13 +196,7 @@ input {
   color: #ffffff;
   font-size: 1.2rem;
 }
-.form_second {
-  color: rgb(114, 113, 113);
-  margin: 0;
-  padding-left: 6rem;
-  min-height: 50vh;
-  width: 50%;
-}
+
 #card {
   margin-bottom: 1rem;
 }
@@ -213,7 +204,6 @@ input {
   color: #ffffff;
   padding-top: 1rem;
 }
-
 
 #submit {
   background-color: #008000;
@@ -227,10 +217,9 @@ input {
   height: 4rem;
   cursor: pointer;
   padding-top: 0;
-  
 }
 #cancel {
-  background-color: black;
+  background-color: #000000;
   color: #ffffff;
   border: none;
   border-radius: 2rem;
@@ -241,14 +230,4 @@ input {
   height: 4rem;
   cursor: pointer;
   padding-top: 0;
-  
 }
-
-
-
-
-
-
-
-
-
