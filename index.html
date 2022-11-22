@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Assignment New</title>
     <link href="style.css" rel="stylesheet" />
+    
   </head>
 
   <body>
@@ -27,7 +28,7 @@
           <a href="#" target="_blank">SIGN IN /SIGN UP</a>
         </div>
       </div>
-      <div class="second_flex">
+      <div class="parag_image_flex">
         <div class="paragraph">
           <div class="paragraph_title">Welcome to the competition</div>
           <div class="paragraph_body">
@@ -40,9 +41,9 @@
             massa. Netus morbi elit quam pulvinar blandit facilisis faucibus.
             Nunc pellentesque cursus pretium eget libero
           </div>
-          <div class="click pointer">click to see more</div>
+          <div class="see_more pointer">click to see more</div>
         </div>
-        <div class="picture">
+        <div class="tree_image">
           <img
             class="img_edit"
             src="/Assets/images/tree new.png"
@@ -53,7 +54,7 @@
 
       <div class="main_box">
         <div class="sub_box">
-          <div class="form_first">
+          <div class="form_left">
             <div class="title_form">Fill the application</div>
             <div class="input_name">
               <input type="text" placeholder="Full Name" />
@@ -97,7 +98,7 @@
               </select>
               <input type="number" id="zipcode" placeholder="Zipcode" />
             </div>
-            <div class="select_gender">
+            <div class="select_gender" id="radio">
               <input
                 type="radio"
                 name="gender"
@@ -117,11 +118,11 @@
               <label for="Female" placeholder="Female">Female</label>
             </div>
           </div>
-          <div class="form_second">
+          <div class="form_right">
             <div class="descr_title">
               <label for="Description">Description</label>
             </div>
-            <textarea rows="3" cols="17" id="description" role="textbox">
+            <textarea rows="4" cols="30" id="description" role="textbox">
             </textarea>
 
             <div>
@@ -135,7 +136,7 @@
               </select>
             </div>
             <div id="payment">Payment Options</div>
-            <div><input name="name on Card" placeholder="Name on Card*" /></div>
+            <div><input name="name on Card" id="card_name" placeholder="Name on Card*" /></div>
             <div>
               <input name="Credit card" id="card" placeholder="Credit Card*" />
             </div>

@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+
 * {
   box-sizing: border-box;
 }
@@ -11,6 +14,7 @@ body {
   background-color: #000000;
   margin: 0;
   width: 100%;
+  font-family: Inter;
 }
 
 .flex_container {
@@ -21,6 +25,7 @@ body {
   width: 100%;
   padding: 3rem;
   flex-wrap: wrap;
+  align-items: center;
 }
 .pointer {
   cursor: pointer;
@@ -31,8 +36,9 @@ body {
 }
 .sub_three {
   display: flex;
-  gap: 3rem;
+  gap: 4rem;
   flex-wrap: wrap;
+  align-items: flex-end;
 }
 
 .sub_about {
@@ -43,7 +49,7 @@ body {
 }
 .sub_compet {
   font-size: 2rem;
-  font-family: Arial;
+ 
   font-weight: bold;
 }
 
@@ -52,37 +58,39 @@ body {
   font-style: italic;
 }
 
-.second_flex {
+.parag_image_flex {
   display: flex;
   justify-content: space-between;
   width: 100%;
   background-color: black;
   padding: 2rem;
   flex-wrap: wrap;
+  align-items: center;
 }
 
 .paragraph {
   width: 50%;
   padding-top: 6rem;
-  font-size: 1.8rem;
-  line-height: 2.3rem;
+  font-size: 1.7rem;
+  padding-left: 2rem;
+  /* line-height: 2.3rem; */
 }
 
 .paragraph_title {
-  font-size: 3.3rem;
-  font-family: Arial;
-  padding-bottom: 2.5rem;
+  font-size: 3.5rem;
+  font-weight: bold;
+  padding-bottom: 3rem;
   margin-top: 10rem;
 }
 
-.click {
+.see_more{
   text-decoration: underline;
   cursor: pointer;
   padding-top: 2rem;
   font-size: 1.6rem;
 }
 
-.pictue {
+.tree_image {
   margin-right: 2rem;
 }
 
@@ -101,8 +109,9 @@ a:visited {
   width: 100%;
   padding: 4rem;
   background-color: rgba(58, 57, 57, 0.8);
-  min-height: 50vh;
+  min-height: 100vh;
   margin-top: 10rem;
+  align-items: center;
 }
 .sub_box {
   display: flex;
@@ -114,83 +123,117 @@ a:visited {
   background-position: center;
   align-content: center;
   justify-content: center;
-  height: 60vh;
+  min-height: 90vh;
   width: 100%;
+  align-items: center;
+  line-height: 3rem;
 }
-.form_first {
-  width: 50%;
-  min-height: 50vh;
-  padding-left: 5rem;
+  
+.form_left {
+  flex-grow: 2;
+  min-height: 90vh;
+  padding: 5rem;
   border-right: 0.1rem solid #444141;
+  
 }
 .title_form {
-  font-size: 1.5rem;
+ 
   padding-bottom: 1rem;
+  font-size: 1.5rem;
   padding-top: 1.5rem;
-  font-size: 2rem;
+  
 }
 input:focus {
   outline: none;
 }
+select:focus{
+ outline: none;
+}
 input {
   background-color: transparent;
   border: none;
-  border-bottom: solid rgb(110, 107, 107);
-  padding-top: 2rem;
+  border-bottom: solid rgb(110, 107, 107) .1rem;
+  padding-top: 3rem;
   font-size: 1.5rem;
 }
+input[type=text]{
+  color: #ffffff;
+  width: 50%;
+}
+input[type=email]{
+  color: #ffffff;
+  width: 50%;
+
+}
+input[type=number]{
+  color: #ffffff;
+  width: 50%;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+-webkit-appearance: none;
+
+}
+
 #city {
   background-color: transparent;
-  color: rgb(114, 113, 113);
-  margin-top: 2rem;
+  color: rgb(110, 109, 109);
+  margin-top: 3rem;
   border: none;
-  border-bottom: solid rgb(110, 107, 107);
+  border-bottom: solid rgb(110, 107, 107) .1rem;
   font-size: 1.5rem;
+  width: 30%;
   
 }
 #state {
   background-color: transparent;
   color: rgb(114, 113, 113);
   border: none;
-  border-bottom: solid rgb(110, 107, 107);
+  border-bottom: solid rgb(110, 107, 107) .1rem;
   font-size: 1.5rem;
+  width: 20%;
 }
 
 #contry {
   background-color: transparent;
   color: rgb(114, 113, 113);
   border: none;
-  border-bottom: solid rgb(110, 107, 107);
+  border-bottom: solid rgb(110, 107, 107) .1rem;
   font-size: 1.5rem;
+  width: 30%;
  
 }
 #zipcode {
-  border-bottom: solid rgb(110, 107, 107);
-  width: 12%;
+  border-bottom: solid rgb(110, 107, 107) .1rem;
+  width: 20%;
   color: rgb(114, 113, 113);
   font-size: 1.5rem;
-  width:15%;
+  width:20%;
  
 }
-.select_gender {
+  
+#radio
+{
+  margin-left: 1rem;
   color: rgb(114, 113, 113);
-  margin-top: 3rem;
+  margin-top: 2.5rem;
+  font-size: 1.5rem;
+}
+
+/* #male {
+  color: rgb(114, 113, 113);
   font-size: 1.5rem;
   
-}
-#male {
-  color: rgb(114, 113, 113);
-  font-size: 1.5rem;
+} */
 
-}
-
-.form_second {
+.form_right{
+  flex-grow: 1;
   color: rgb(114, 113, 113);
   margin: 0;
-  padding-left: 6rem;
-  min-height: 50vh;
-  width: 50%;
-  padding-bottom: 2.5rem;
+  padding:5rem;
+  min-height: 90vh;
+ 
 }
 
 #description {
@@ -200,6 +243,7 @@ input {
   padding-top: 1.5rem;
   border-radius: 1rem;
   resize: none;
+  color: #ffffff;
 }
 .descr_title {
   color: rgb(114, 113, 113);
@@ -210,29 +254,37 @@ input {
 .select_category {
   background-color: transparent;
   border: none;
-  border-bottom: solid rgb(95, 93, 93);
+  border-bottom: solid rgb(95, 93, 93) .1rem;
   color: rgb(97, 96, 96);
   padding-top: 2rem;
   font-size: 1.5rem;
+  width: 50%;
 }
 #payment {
   padding-top: 1.5rem;
   color: #ffffff;
   font-size: 1.8rem;
+  width: 50%;
+}
+#card_name{
+  color: #ffffff;
+  width: 50%;
 }
 
 #card {
   margin-bottom: 1rem;
+  color: #ffffff;
+  width: 50%;
 }
 #terms {
-  color: blue;
+  color: rgb(106, 163, 201);
   font-size: 1.6rem;
 }
-/* #agree {
-  color: #000000;
-  padding: 2rem;
-  font-size: 1.7rem;
- } */
+:checked{ 
+  accent-color:#000000;
+  margin-top: 1.5rem;
+}
+
 
 #submit {
   background-color: #008000;
