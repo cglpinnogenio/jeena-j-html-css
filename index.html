@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Assignment New</title>
     <link href="style.css" rel="stylesheet" />
-    
   </head>
 
   <body>
@@ -57,7 +56,12 @@
           <div class="form_left">
             <div class="title_form">Fill the application</div>
             <div class="input_name">
-              <input type="text" placeholder="Full Name" />
+              <input
+                type="text"
+                placeholder="Full Name"
+                id="Full_name"
+                required
+              />
             </div>
 
             <div class="input_email">
@@ -65,7 +69,7 @@
             </div>
 
             <div class="input_phone">
-              <input type="number" placeholder="Phone Number" />
+              <input type="number" placeholder="Phone Number" required />
             </div>
 
             <div>
@@ -75,6 +79,11 @@
                 placeholder="Street Address"
               />
             </div>
+
+            <div>
+              <input type="text" id="input_address" />
+            </div>
+
             <div class="select_location">
               <select name="city" id="city" placeholder="city">
                 <option value="City">City</option>
@@ -122,7 +131,13 @@
             <div class="descr_title">
               <label for="Description">Description</label>
             </div>
-            <textarea rows="4" cols="30" id="description" role="textbox">
+            <textarea
+              rows="5"
+              cols="30"
+              id="description"
+              role="textbox"
+              required
+            >
             </textarea>
 
             <div>
@@ -136,7 +151,14 @@
               </select>
             </div>
             <div id="payment">Payment Options</div>
-            <div><input name="name on Card" id="card_name" placeholder="Name on Card*" /></div>
+            <div>
+              <input
+                name="name on Card"
+                id="card_name"
+                placeholder="Name on Card*"
+                required
+              />
+            </div>
             <div>
               <input name="Credit card" id="card" placeholder="Credit Card*" />
             </div>
@@ -153,21 +175,20 @@
                 I Agree
               </span></label
             >
-            <div class="two_buttons">
-              <div>
-                <input
-                  type="submit"
-                  value="submit"
-                  placeholder="submit"
-                  id="submit"
-                />
-                <input
-                  type="submit"
-                  value="cancel"
-                  placeholder="cancel"
-                  id="cancel"
-                />
-              </div>
+
+            <div>
+              <input
+                type="submit"
+                value="submit"
+                placeholder="submit"
+                id="submit"
+              />
+              <input
+                type="submit"
+                value="cancel"
+                placeholder="cancel"
+                id="cancel"
+              />
             </div>
           </div>
         </div>
