@@ -53,29 +53,29 @@
 
       <div class="main_box">
         <div class="sub_box">
-          <div class="form_left">
+         
+          <form class="form_left">
             <div class="title_form">Fill the application</div>
             <div class="input_name">
               <input
                 type="text"
                 placeholder="Full Name"
-                id="Full_name"
                 required
               />
             </div>
 
             <div class="input_email">
-              <input type="email" placeholder="Enter Email Address" />
+              <input type="email"  placeholder="Enter Email Address" />
             </div>
 
             <div class="input_phone">
-              <input type="number" placeholder="Phone Number" required />
+              <input type="number"  placeholder="Phone Number" required />
             </div>
 
             <div>
               <input
                 type="text"
-                class="input_address"
+                id="input_address_one"
                 placeholder="Street Address"
               />
             </div>
@@ -87,7 +87,7 @@
             <div class="select_location">
               <select name="city" id="city" placeholder="city">
                 <option value="City">City</option>
-                <option value="kochi">Kochi</option>
+                <option value="kochi"> Kochi </option>
                 <option value="TVM">TVM</option>
                 <option value="Kozhikode">Kozhikode</option>
               </select>
@@ -126,8 +126,9 @@
               />
               <label for="Female" placeholder="Female">Female</label>
             </div>
-          </div>
-          <div class="form_right">
+          </form>
+
+          <form class="form_right">
             <div class="descr_title">
               <label for="Description">Description</label>
             </div>
@@ -179,19 +180,20 @@
             <div>
               <input
                 type="submit"
-                value="submit"
-                placeholder="submit"
+                value="Submit"
+                placeholder="Submit"
                 id="submit"
               />
               <input
                 type="submit"
-                value="cancel"
-                placeholder="cancel"
+                value="Cancel"
+                placeholder="Cancel"
                 id="cancel"
               />
             </div>
-          </div>
+          </form>
         </div>
+     
       </div>
     </div>
   </body>

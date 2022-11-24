@@ -14,28 +14,37 @@ body {
   margin: 0;
   width: 100%;
   font-family: Inter;
+  display:flex;
+  justify-content: center;
 }
-
+.parent{
+  max-width: 140rem;
+}
 .flex_container {
   display: flex;
   position: fixed;
+  top:0;
   justify-content: space-between;
   background-color: rgb(0, 0, 0);
   width: 100%;
   padding: 2rem;
   flex-wrap: wrap;
   align-items: center;
+  max-width: 140rem;
 }
+
 .pointer {
   cursor: pointer;
 }
 
 .sub_award {
   font-size: 3rem;
+  width: 3rem 2rem;
 }
 .sub_three {
   display: flex;
   gap: 4rem;
+  /* width: 40%; */
   flex-wrap: wrap;
   align-items: flex-end;
 }
@@ -59,11 +68,12 @@ body {
 
 .parag_image_flex {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   background-color: #000000;
   padding: 2rem;
   align-items: center;
-  height: 120vh;
+  margin:10rem 0;
 }
 
 .paragraph {
@@ -108,12 +118,13 @@ a:visited {
 }
 .sub_box {
   display: flex;
+  flex-wrap: wrap;
   flex-basis: 100%;
   background-color: rgba(46, 46, 46, 0.2);
   background-image: url(./Assets/images/camera\ downlod.jpg);
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  background-size:cover;
+  background-position:center;
   line-height: 2rem;
 }
 
@@ -141,35 +152,49 @@ input {
   border-bottom: solid rgb(110, 107, 107) 0.1rem;
   padding-top: 3rem;
   font-size: 1.5rem;
+  width:100%;
+  padding-bottom:1rem;
+  color: #ffffff;
 }
 
-input[type="text"] {
-  color: #ffffff;
-  width: 50%;
+.input_name {
+  width: 60%;
+ 
 }
 
-input[type="email"] {
-  color: #ffffff;
-  width: 50%;
+.input_email{
+  width: 60%;
+  padding-bottom: 1rem;
 }
-input[type="number"] {
-  color: #ffffff;
-  width: 50%;
+.input_phone {
+  width: 58%;
+  padding-bottom: 1rem;
 }
 
 input[type="number"]::-webkit-outer-spin-button,
 input[type="number"]::-webkit-inner-spin-button {
   -webkit-appearance: none;
 }
+#input_address_one {
+  width: 55%;
+  padding-bottom: 1rem;
+}
+#input_address {
+  width: 50%;
+  padding-bottom: 1rem;
+}
 
 #city {
-  background-color: transparent;
-  color: rgb(110, 109, 109);
+  background-color:transparent;
+  color:  rgb(114, 113, 113);
   margin-top: 3rem;
   border: none;
   border-bottom: solid rgb(110, 107, 107) 0.1rem;
   font-size: 1.5rem;
-  width: 20%;
+  /* margin-bottom: 2rem; */
+  margin-right: 2rem;
+  padding-bottom: 1rem;
+  width: 25%;
 }
 #state {
   background-color: transparent;
@@ -178,6 +203,8 @@ input[type="number"]::-webkit-inner-spin-button {
   border-bottom: solid rgb(110, 107, 107) 0.1rem;
   font-size: 1.5rem;
   width: 15%;
+  padding-bottom: 1rem;
+  
 }
 
 #contry {
@@ -186,7 +213,9 @@ input[type="number"]::-webkit-inner-spin-button {
   border: none;
   border-bottom: solid rgb(110, 107, 107) 0.1rem;
   font-size: 1.5rem;
-  width: 20%;
+  width: 25%;
+  margin-right:2rem ;
+  padding-bottom: 1rem;
 }
 #zipcode {
   border-bottom: solid rgb(110, 107, 107) 0.1rem;
@@ -194,17 +223,23 @@ input[type="number"]::-webkit-inner-spin-button {
   color: rgb(114, 113, 113);
   font-size: 1.5rem;
   width: 15%;
+  padding-bottom: 1rem;
 }
-.input_address {
-  width: 45%;
-}
-#input_address {
-  width: 40%;
-}
+
+
 #radio {
   color: rgb(114, 113, 113);
   margin-top: 2.5rem;
   font-size: 1.5rem;
+  /* width: 50%; */
+  /* display: inline; */
+}
+#male{
+  width:5%
+  
+}
+#female{
+  width:5%;
 }
 
 .form_right {
@@ -222,11 +257,12 @@ input[type="number"]::-webkit-inner-spin-button {
   border-radius: 1rem;
   resize: none;
   color: #ffffff;
+  padding:1rem;
 }
 .descr_title {
   color: rgb(114, 113, 113);
   padding-bottom: 1rem;
-  padding-top: 1.5rem;
+  padding-bottom: 2rem;
   font-size: 1.5rem;
 }
 .select_category {
@@ -234,36 +270,48 @@ input[type="number"]::-webkit-inner-spin-button {
   border: none;
   border-bottom: solid rgb(95, 93, 93) 0.1rem;
   color: rgb(97, 96, 96);
-  padding-top: 2rem;
+  margin-top: 5rem;
   font-size: 1.5rem;
-  width: 50%;
+  width: 55%;
+  padding-bottom: 1rem;
 }
 #payment {
   padding-top: 3rem;
   color: #ffffff;
   font-size: 1.6rem;
-  width: 50%;
+  width: 55%;
+  padding-bottom: 1rem;
 }
+
 #card_name {
   color: #ffffff;
-  width: 50%;
+  width: 55%;
+  padding-bottom: 1rem;
 }
+
 
 #card {
   margin-bottom: 1rem;
   color: #ffffff;
-  width: 50%;
+  width: 55%;
+  padding-bottom: 1rem;
 }
+
 #terms {
   color: rgb(106, 163, 201);
-  font-size: 1.6rem;
+  font-size: 1.3rem;
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
+
+}
+#agree{
+  width:3%;
 }
 :checked {
   accent-color: #000000;
-  margin-top: 1.5rem;
 }
+  
+
 
 #submit {
   background-color: #008000;
@@ -273,7 +321,7 @@ input[type="number"]::-webkit-inner-spin-button {
   border-radius: 2rem;
   text-align: center;
   font-size: 1.5rem;
-  width: 15rem;
+  width: 30%;
   height: 4rem;
   cursor: pointer;
   padding-top: 0;
@@ -286,10 +334,10 @@ input[type="number"]::-webkit-inner-spin-button {
   margin-left: 2rem;
   text-align: center;
   font-size: 1.5rem;
-  width: 15rem;
+  width: 30%;
   height: 4rem;
   cursor: pointer;
-  padding-top: 0;
+  padding-top:0;
 }
 #submit:hover {
   background-color: #18b86d;
